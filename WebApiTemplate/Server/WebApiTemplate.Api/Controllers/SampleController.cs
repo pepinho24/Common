@@ -2,10 +2,10 @@
 {
     using System.Linq;
     using System.Web.Http;
-    //using System.Web.Http.Cors;
-    //using AutoMapper.QueryableExtensions;
+    using AutoMapper.QueryableExtensions;
     using Services.Data.Contracts;
     using System.Web.Http.Cors;
+    using Models.Samples;
 
     public class SamplesController : ApiController
     {
@@ -21,6 +21,7 @@
         {
             var result = this.samples
                 .All()
+                .ProjectTo<SampleDetailsResponseModel>()
                 .ToList();
 
             return this.Ok(result);
@@ -36,6 +37,7 @@
 
             var result = this.samples
                 .ById(id, this.User.Identity.Name)
+                .ProjectTo<SampleDetailsResponseModel>()
                 .FirstOrDefault();
 
             if (result == null)
