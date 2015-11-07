@@ -13,6 +13,7 @@ namespace WebApiTemplate.Api.App_Start
     using Ninject.Web.Common;
     using Data.Contracts;
     using Data;
+    using Infrastructure;
 
     public static class NinjectConfig
     {
@@ -48,6 +49,7 @@ namespace WebApiTemplate.Api.App_Start
                 kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
                 kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
 
+                ObjectFactory.Initialize(kernel);
                 RegisterServices(kernel);
                 return kernel;
             }
