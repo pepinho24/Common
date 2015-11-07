@@ -31,7 +31,7 @@ Also you should **rename all the namespaces** when you open the project. Then - 
 - Microsoft Individual user accounts
 
 
-This template is based on the Telerik's Software Academy Workshop **"ASP.NET Web API architecture and design"**
+This template is based on the [Telerik's Software Academy](http://telerikacademy.com/) Workshop **"ASP.NET Web API architecture and design"**
 - [Video of the demo](https://www.youtube.com/watch?v=gaknr3TnpTI)
 - [Source code of the demo](https://github.com/TelerikAcademy/Web-Services-and-Cloud/tree/master/03.%20ASP.NET-Web-API-Architecture/LiveDemo-2015-SourceControlSystem)
 - [The Web Services and Cloud course at Telerik Academy](http://telerikacademy.com/Courses/Courses/Details/275)
