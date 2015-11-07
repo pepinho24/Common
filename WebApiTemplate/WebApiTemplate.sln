@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiTemplate.Models", "Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiTemplate.Api", "Server\WebApiTemplate.Api\WebApiTemplate.Api.csproj", "{78B5CEE2-5A24-4546-8BFD-880318070E50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiTemplate.Services.Data", "Services\WebApiTemplate.Services.Data\WebApiTemplate.Services.Data.csproj", "{F1176AE3-5513-460A-83D2-3432702DE31B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{78B5CEE2-5A24-4546-8BFD-880318070E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78B5CEE2-5A24-4546-8BFD-880318070E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78B5CEE2-5A24-4546-8BFD-880318070E50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1176AE3-5513-460A-83D2-3432702DE31B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1176AE3-5513-460A-83D2-3432702DE31B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1176AE3-5513-460A-83D2-3432702DE31B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1176AE3-5513-460A-83D2-3432702DE31B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,5 +47,6 @@ Global
 		{AE30F25F-26B4-4981-B812-BB9137AE55BE} = {A295FCE7-B965-465F-828A-91D0D028FC27}
 		{F2F1A66F-5B23-4F67-B469-F28D7D7D8929} = {A295FCE7-B965-465F-828A-91D0D028FC27}
 		{78B5CEE2-5A24-4546-8BFD-880318070E50} = {4003AE0D-DD85-43C2-9852-85A04E376D8A}
+		{F1176AE3-5513-460A-83D2-3432702DE31B} = {172BBF28-53A1-403D-A433-1C0716EE3F3A}
 	EndGlobalSection
 EndGlobal
