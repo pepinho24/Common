@@ -5,6 +5,7 @@
     //using System.Web.Http.Cors;
     //using AutoMapper.QueryableExtensions;
     using Services.Data.Contracts;
+    using System.Web.Http.Cors;
 
     public class SamplesController : ApiController
     {
@@ -15,7 +16,7 @@
             this.samples = samplesService;
         }
 
-     //   [EnableCors("*", "*", "*")]
+        [EnableCors("*", "*", "*")]
         public IHttpActionResult Get()
         {
             var result = this.samples
