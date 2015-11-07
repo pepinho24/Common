@@ -1,18 +1,18 @@
 # Tips on how to use the templates
 In order to use fast the template it is better to **rename** all the necessary things. You should open the given files **as text** and replace **"WebApiTemplate"** with the base name of your project. All you have to rename is:
- - **.sln** - the solution of the project;
- - **/Properties/AssemblyInfo.cs** in every project 
-    - .Data
-    - .Models
-    - .Api
-    - .Services.Data
-- **.csproj** - every project
-    - .Data
-    - .Models
-    - .Api
-    - .Services.Data
-- **Global.asax** - the starting point of the application;
-- **Web.Config** - should customize the connection string.
+ 1. The solution of the project - **.sln**
+ 2. The project file of every project - **.csproj**
+    - .Data project 
+    - .Models project 
+    - .Api project
+    - .Services.Data project
+ 3. The assembly properties of every project - **/Properties/AssemblyInfo.cs**: 
+    - .Data project
+    - .Models project
+    - .Api project
+    - .Services.Data project
+ 4. The **Global.asax** file - the starting point of the application
+ 5. The **Web.Config** file - should customize the connection string.
 
 Also you should **rename all the namespaces** when you open the project. Then - voila, you have a high quality web api skeleton, high level of abstraction, high cohesion, loose coupling, all you have to do is add the code first models, add the IDbSets in the I...DbContext and the Controllers. 
 
