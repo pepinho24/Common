@@ -2,6 +2,7 @@
 {
     using Microsoft.AspNet.Identity.EntityFramework;
     using Models;
+    using System.Data.Entity;
 
     public class WebApiTemplateDbContext : IdentityDbContext<User>
     {
@@ -9,6 +10,8 @@
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
+
+        public virtual IDbSet<SampleClass> SampleClasses{ get; set; }
 
         public static WebApiTemplateDbContext Create()
         {
