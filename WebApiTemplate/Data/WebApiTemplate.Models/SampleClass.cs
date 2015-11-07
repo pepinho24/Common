@@ -11,7 +11,7 @@
 
         [MinLength(21)]
         [Required]
-        [Index(IsUnique = true)]
+       // [Index(IsUnique = true)]
         public string Name { get; set; }
 
         public string UserId { get; set; }

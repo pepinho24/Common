@@ -57,7 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contracts\IMusicSystemDbContext.cs" />
+    <Compile Include="Contracts\IWebApiTemplateDbContext.cs" />
     <Compile Include="Contracts\IRepository.cs" />
     <Compile Include="EfGenericRepository.cs" />
     <Compile Include="Migrations\Configuration.cs" />
