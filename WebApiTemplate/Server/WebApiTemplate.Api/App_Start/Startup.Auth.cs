@@ -10,6 +10,7 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using WebApiTemplate.Api.Providers;
 using WebApiTemplate.Api.Models;
+using WebApiTemplate.Data;
 
 namespace WebApiTemplate.Api
 {
@@ -23,7 +24,7 @@ namespace WebApiTemplate.Api
         public void ConfigureAuth(IAppBuilder app)
         {
             // Configure the db context and user manager to use a single instance per request
-            app.CreatePerOwinContext(ApplicationDbContext.Create);
+            app.CreatePerOwinContext(WebApiTemplateDbContext.Create);
             app.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager.Create);
 
             // Enable the application to use a cookie to store information for the signed in user

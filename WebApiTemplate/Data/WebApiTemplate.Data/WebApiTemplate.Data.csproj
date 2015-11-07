@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebApiTemplateDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WebApiTemplate.Models\WebApiTemplate.Models.csproj">
